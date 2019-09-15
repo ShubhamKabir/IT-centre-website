@@ -1,0 +1,274 @@
+@charset "utf-8";
+/*
+Template Name: Cirpark
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Layout CSS
+*/
+
+@import url("fontawesome-4.5.0.min.css");
+@import url("custom.flexslider.css");
+@import url("framework.css");
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row0, .row0 a{}
+.row1{}
+.row2, .row2 a{}
+.row3{}
+.row4, .row4 a{}
+.row5, .row5 a{}
+
+
+/* Top Bar
+--------------------------------------------------------------------------------------------------------------- */
+#topbar{padding:10px 0; font-size:12px;}
+
+#topbar .fl_left{margin-top:4px;}
+#topbar .fl_left .inline > li i{margin:0 5px 0 0; line-height:normal;}
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{padding:0px 0px 20px 0px;}
+#header #logo{margin-top:8px;}
+
+#header #quickinfo{font-size:21px; text-transform:uppercase;}
+#header #quickinfo li{margin-right:100px;}
+#header #quickinfo li:last-child{margin-right:0;}
+#header #quickinfo strong{display:block; margin:0 0 10px 0; padding:0; font-size:20px;}
+#header #quickinfo br{display:none;}
+div#quickinfo {
+    margin-top: 0px;
+    margin-left: 160px;
+}
+.career {
+    margin-top: 40px;
+    
+    padding-right: 170px;
+}
+/* Page Intro
+
+.web {border: 1px solid #000;padding: 7px;}
+--------------------------------------------------------------------------------------------------------------- */
+
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:20px 0;}
+
+
+/* Coloured Boxes
+--------------------------------------------------------------------------------------------------------------- */
+.clrbox{display:table;}
+
+.clrbox *{margin:30px;}
+.clrbox li{display:table-cell; width:25%;}
+
+.clrbox .heading, .clrbox p:first-of-type{margin-bottom:30px;}
+.clrbox .btn{}
+
+
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:50px 0;}
+
+#footer .title{margin:0 0 50px 0; padding:0; font-size:1.2rem; text-transform:uppercase;}
+
+#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
+#footer .linklist li:last-child{margin:0; padding:0; border:none;}
+#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
+#footer .linklist li, #footer .linklist li::after{clear:both;}
+
+#footer .contact{}
+#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
+#footer .contact li *{margin:0; padding:0; line-height:1.6;}
+#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:30px 0; border-top:1px solid;}
+#copyright *{margin:0; padding:0;}
+
+
+/* Transition Fade
+--------------------------------------------------------------------------------------------------------------- */
+*, *::before, *::after{transition:all .3s ease-in-out;}
+
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul{margin:0; padding:0; list-style:none;}
+
+#mainav{line-height:normal;}
+#mainav .drop::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav{}
+#mainav ul{}
+#mainav ul ul{z-index:9999; position:absolute; width:160px; text-align:left;}
+#mainav li{display:block; position:relative; float:left; margin:0; padding:0; text-transform:uppercase;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0; text-transform:none;}
+#mainav ul.clear{border:solid; border-width:0 0 0 1px;}
+#mainav li a{display:block; padding:20px; border:solid; border-width:0 1px 0 0; border-collapse:collapse;}
+#mainav li li a{border-width:0 0 1px 0;}
+#mainav li li:first-child a, #mainav li li:last-child a{border-width:0 0 1px 0;}
+#mainav .drop{padding-left:25px;}
+#mainav li li a{display:block; margin:0; padding:10px 15px;}
+#mainav .drop:after{content:"\f0d7";}
+#mainav .drop:after{top:25px; left:15px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+
+/* Back to Top */
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop:hover{opacity:1;}
+
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; float:left; margin:0 5px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+
+.faico a{display:block; width:30px; height:30px; line-height:30px; font-size:14px; text-align:center; border-radius:50%;}
+.faico a{color:inherit; background-color:#DADADA;}
+
+.faico a:hover{color:#FFFFFF;}
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-google-plus:hover{background-color:#DB4A39;}
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#888888; background-color:#EEEEEE;}
+a{color:#E9365A;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+*:required:focus{border-color:#E9365A;}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.btn{height:50px;width:100px;}
+.btn{color:#FFFFFF; background-color:#E9365A; border-color:#E9365A;}
+.btn:hover{color:inherit; background-color:transparent; border-color:inherit;}
+
+
+/* Rows */
+.row0{color:#000; background-color:#EEEEEE;}
+.row1{color:#888888; background-color:#FFFFFF;}
+.row2{color:#FFFFFF; background-color:#E9365A;}
+.row3{color:#000; background-color:#FFFFFF;}
+.row4{color:#888888; background-color:#EEEEEE;}
+.row5, .row5 a{color:#888888; background-color:#EEEEEE;}
+
+
+
+/* Header */
+#header #logo *{color:inherit;}
+
+
+
+/* Coloured Boxes */
+.clrbox{color:#000;}
+
+
+/* Footer */
+#footer .title{color:#333333;margin: 0 0 20px 0;}
+#footer .linklist li{border-color:#DADADA;}
+
+
+/* Copyright */
+#copyright{border-color:#DADADA;}
+
+
+/* Navigation */
+#mainav ul.clear, #mainav li a{border-color:#C21437;}
+#mainav li a{color:inherit; background-color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#F5A9B8; background-color:inherit;}
+#mainav li li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a{color:#FFFFFF; background-color:#E9365A;}
+
+#backtotop{color:#FFFFFF; background-color:#E9365A;}
+
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:90%;}
+
+	#topbar{}
+
+	#header{}
+
+	#mainav{}
+	#mainav ul{display:block;}
+
+	.container{}
+
+	#footer{}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+@media screen and (max-width:750px){
+	.fl_left, .fl_right{display:block; float:none;}
+	.one_third{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+	#topbar{padding:10px 0 15px; text-align:center;}
+	#topbar *{margin:0;}
+	#topbar .fl_left ul{margin:0 0 10px 0; line-height:normal;}
+	#topbar .fl_left ul li{display:inline-block; margin-right:20px;}
+	#topbar .fl_left ul li:last-child{margin-right:0;}
+	#topbar .faico li{float:none;}
+
+	#header{text-align:center;}
+	#header #logo{margin:0 0 30px 0;}
+
+	.clrbox, .clrbox li{display:block; width:100%;}
+
+	#footer{padding-bottom:30px;}/* Not necessary, but looks better */
+    #mainav ul{display:inline-block}
+}
+
+
+@media screen and (max-width:450px){
+	#topbar .fl_left ul li{display:block; margin:5px 0 0 0;}
+	#topbar .fl_left ul li:first-child{margin:0;}
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px){
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+
+	#header #quickinfo li{display:block; margin-right:0;}
+}
